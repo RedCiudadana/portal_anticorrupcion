@@ -1,0 +1,80 @@
+---
+permalink: about/index.html
+---
+
+{% extends "src/base.njk" %}
+
+
+{% block head %}
+  <!--NETLIFY CMS-->
+  <title> ¿Qué es Catálogo de Trámites?</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
+
+{% block content %}
+        <div class="page-header breadcrumb-wrap">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html" rel="nofollow"><i class="fi-rs-home mr-5"></i>Inicio</a>
+                    <span></span> ¿Qué es Catálogo de Trámites?
+                </div>
+            </div>
+        </div>
+        <div class="page-content pt-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-12 m-auto">
+                        <section class="row align-items-center mb-50">
+                            <div class="col-lg-6">
+                                <img src="/assets/imgs/red/RECUADROs-33.png" alt="" class="border-radius-15 mb-md-3 mb-lg-0 mb-sm-4" />
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="pl-25">
+                                    <h2 class="mb-30">Bienvenidos al Catálogo de Trámites Verapaz</h2>
+                                    <p class="mb-25">En este espacio cualquir ciudadano encontrará información y enlaces necesarios para realizar trámites ante instituciones públicas desde casa, oficina y/o dispositivo móvil.</p>
+                                    <p class="mb-50">Los trámites podrán realizarse de forma electrónica, evitando el uso de papel y largas filas de espera al presentarse a una institución pública, reduciendo pasos, tiempo y costo en la gestión.</p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Municipalidades-->
+        <section class="featured section-padding-60 px-4" style="background-color:#e3ebf5">
+            <div class="container col-xl-10 m-auto">
+                <div class="d-flex">
+                    <h4>Municipalidades</h4>
+                    <a class="btn btn-xs ml-40"  href="/categorias/index.html">Ver Más<i class="fi-rs-arrow-small-right"></i><a/>
+                </div>
+                <div class="row mb-20 mt-40">
+
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="cuadros-municipales">
+                            <img src="/assets/imgs/red/elementos/iconos/ICONO-20.png">
+                            <h6>Nombre de la municipalidad</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="cuadros-municipales">
+                            <img src="/assets/imgs/red/elementos/iconos/ICONO-20.png">
+                            <h6>Nombre de la municipalidad</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="cuadros-municipales">
+                            <img src="/assets/imgs/red/elementos/iconos/ICONO-20.png">
+                            <h6>Nombre de la municipalidad</h6>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </section>
+{% endblock %}
