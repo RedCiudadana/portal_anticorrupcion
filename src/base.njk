@@ -1,46 +1,239 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="es-ES">
-<head>
+<!doctype html>
+<html class="no-js" lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        
+        <meta name="description" content="Red Ciudadana es una organización que promueva la democracia en Guatemala">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="Red Ciudadana" />
 
-	<!-- Stylesheets
-	============================================= -->
-	<!-- / -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/img/redciudadana.png">
+        <!-- Place favicon.ico in the root directory -->
 
-    {% block head %}
-    {% endblock %}
-
-</head>
-
-<body class="stretched search-overlay">
-	
-		
-		{% block content %}
-
-        {% endblock %} 
-	
-
-    {% block body_javascripts %}
-
-    {% endblock %}
-
-	<script>
-      if (window.netlifyIdentity) {
-          window.netlifyIdentity.on('init', (user) => {
-          if (!user) {
-              window.netlifyIdentity.on('login', () => {
-              document.location.href = '/admin/';
-              });
-          }
-          });
-      }
-    </script>
+        <!-- Metadata-start -->
+        
+        <!-- Google Adds -->
+        <script data-ad-client="ca-pub-1186297593871080" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+		<!-- CSS here -->
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/meanmenu.css">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="/assets/css/responsive.css">
+        <link rel="stylesheet" href="/assets/css/retainable.css">
 
-	</body>
+        <!--link href="/preview-files/preview.css" type="text/css" rel="stylesheet"-->
+
+        <!-- Start of sidebar assets code -->
+      
+        <script src="/super-sidebar/js/jquery-3.4.1.min.js" type="text/javascript"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        {% block head %}
+        {% endblock %}
+
+    </head>
+    <body class="p0">
+        <!-- Preloader Start -->
+        <div id="preloader-active">
+            <div class="preloader d-flex align-items-center justify-content-center">
+                <div class="preloader-inner position-relative">
+                    <div class="text-center">
+                        <img src="/assets/img/red/loader.gif" style="width:50%;height:auto;margin:auto" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The social media icon bar -->
+        <div class="icon-bar">
+            <a target="_blank" href="https://www.facebook.com/Redciudadanagt"><i class="fab fa-facebook-f"></i></a>
+            <a target="_blank" href="https://twitter.com/redxguate"><i class="fa-brands fa-x-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/redxguate/"><i class="fab fa-instagram "></i></a>
+            <a target="_blank" href="https://www.youtube.com/c/RedciudadanaOrgGt"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+        <!-- header-start -->
+		<header class="default-header"><!--header-transparent-->
+            <div class="main-menu-area menu-2 pl-155 pr-115">
+                <div class="container-fluid">
+                    <div class="row d-flex align-items-center padmen " id="menu">
+                        <div class="col-xl-2 col-lg-3 p0">
+                            <div class="logo">
+                                <a href="/index.html"><img src="/assets/img/red/LOGO-RED_NEGRO.png" alt="Logo Red Ciudadana" style="margin: 0 5%;" /></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-9" >
+                            <div class="main-menu f-left ml-120">
+                                <nav id="mobile-menu">
+                                    <ul class="nav-items">
+                                        <li id="inicio"><a href="/index.html">INICIO</a> </li>
+                                        <li><a href="/conjuntos/index.html">CONJUNTOS DE DATOS</a> </li>
+                                        <li><a href="/acerca/index.html">ACERCA</a> </li>
+                                        <li><a href="/contacto/index.html">CONTACTO</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-xl-block ">
+                            <div class="header-02-wrapper">
+    
+                                <div class="header-icon header-02-icon f-right">
+                                    <a target="_blank" href="https://www.facebook.com/Redciudadanagt"><i class="fab fa-facebook-f"></i></a>
+                                    <a target="_blank" href="https://twitter.com/redxguate"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a target="_blank" href="https://www.instagram.com/redxguate/"><i class="fab fa-instagram "></i></a>
+                                    <!--a target="_blank" href="https://www.youtube.com/c/RedciudadanaOrgGt"><i class="fab fa-youtube"></i></a-->
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <div class="mobile-menu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header-end -->
+        <main>
+            
+
+            {% block content %}
+            {% endblock %} 
+
+        </main>
+
+        <!-- footer-area-start -->
+        <footer>
+            <div class="footer-middle-area pt-80 pb-25" style="background-image:url(/assets/img/red/03.png);   ">
+                <div class="container">
+                    <div class="row" style="justify-content:space-between">
+                        <div class="col-xl-4 col-lg-4 col-md-4">
+                            <div class="footer-wrapper mb-30">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="/assets/img/red/LOGO-RED_BLANCO.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-3 col-sm-9">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <a target="_blank" style="margin:0 3px" href="https://www.facebook.com/Redciudadanagt"><img src="/assets/img/red/REDES-27.png"></a>
+                                <a target="_blank" style="margin:0 3px" href="https://twitter.com/redxguate"><img src="/assets/img/red/REDES-28.png"></a>
+                                <a target="_blank" style="margin:0 3px" href="https://www.instagram.com/redxguate/"><img src="/assets/img/red/REDES-29.png"></a>
+                                <!--a target="_blank" style="margin:0 3px" href="https://www.youtube.com/channel/UCQwc62j7beStZYFzwPxBEQg"><img src="/assets/img/red/REDES-30.png"></a-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-40 mb-40">
+                        <div class="col-xl-12 col-lg-12 col-md-12">
+                            <img src="/assets/img/red/09.png">
+                        </div>
+                    </div>
+                    <div class="footer-bottom-area pt-25 mt-45" style="border-top:none">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="copyright text-center">
+                                    <p><!--i class="far fa-copyright"></i> 2020 <a href="#">Fundee.</a--> Asociación Civil Red Ciudadana</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-area-end -->
+
+        <!-- JS here -->
+        <script src="/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="/assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="/assets/js/popper.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/owl.carousel.min.js"></script>
+        <script src="/assets/js/isotope.pkgd.min.js"></script>
+        <script src="/assets/js/slick.min.js"></script>
+        <script src="/assets/js/jquery.meanmenu.min.js"></script>
+        <script src="/assets/js/ajax-form.js"></script>
+        <script src="/assets/js/wow.min.js"></script>
+        <script src="/assets/js/jquery.scrollUp.min.js"></script>
+        <script src="/assets/js/jquery.knob.js"></script>
+        <script src="/assets/js/jquery.appear.js"></script>
+        <script src="/assets/js/jquery.counterup.min.js"></script>
+        <script src="/assets/js/waypoints.min.js"></script>
+        <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+
+        <script src="/assets/js/plugins.js"></script>
+        <script src="/assets/js/main.js"></script>
+	
+	<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"724a7f2bbe5597e57028816d0def9a31"})});</script>
+
+        <!--Script Header-->
+        <script type="text/javascript">      
+          $(function () {
+            var $win = $(window);
+            // definir mediente $pos la altura en píxeles desde el borde superior de la ventana del navegador y el elemento
+            var $pos = 50;
+            $win.scroll(function () {
+               if ($win.scrollTop() >= $pos)
+                    $('#menu').addClass('sticky');
+               else {
+                    $('#menu').removeClass('sticky');          
+                    
+               }
+             });
+          });
+        </script>
+
+        <!--Embed Medium-->
+        <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
+
+        <!--Instagram Gallery>
+        <script type="text/javascript">
+            $('.element').simpleInstagramFancybox({
+               mode : 'user',
+               userID : '17841402179211373',
+               accessToken : 'EAAEHqNm5i0cBAKgEV4ZBEBACwcMv9QJPx8VGCZCQrZBeRJZCHTKOXz2ZAAnUBl5PZCIDWNyZANA7QPMzlxw88TGXrDnzLGeVso70HAs42XyP3bV3UOEs3JQZB34cjMIZCS7ZCc8nnZCDNm155ZAAqZC47hMZCn3l51ZAZBYcEmTHrsRHTWSKp2PxUbXRqZBYh',
+               speed : 700,
+               delayInterval : 80,
+               appearEffect : 'fade',
+               captionOn : false
+            });
+        </script-->
+
+        <!--HelloBar-->
+        <!--script src="https://my.hellobar.com/095e0a9dd7bb72110e8d160eb28ba5452fcf5a69.js" type="text/javascript" charset="utf-8" async="async"></script-->
+        <script>
+            (function ($) {
+                ("use strict");
+                // Page loading
+                $(window).on("load", function () {
+                    $("#preloader-active").delay(550).fadeOut("slow");
+                    $("body").delay(550).css({
+                        overflow: "visible"
+                    });
+                    $("#onloadModal").modal("show");
+                });
+            
+            })(jQuery);
+        </script>
+        <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on('init', (user) => {
+            if (!user) {
+                window.netlifyIdentity.on('login', () => {
+                document.location.href = '/admin/';
+                });
+            }
+            });
+        }
+        </script>
+        
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+        {% block body_javascripts %}
+        {% endblock %}
+    </body>
 </html>
