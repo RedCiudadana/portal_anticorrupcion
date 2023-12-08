@@ -6734,7 +6734,7 @@ button.mfp-close, button.mfp-arrow{
   line-height: 15px;
 }
 
-.aplicaciones{
+.feature{
   background-color: #fff;
   border-radius: 10px;
   border: 0.5px solid #f1f1f1;
@@ -6743,14 +6743,27 @@ button.mfp-close, button.mfp-arrow{
   text-align: left;
   box-shadow: rgb(146 146 146) 5px 5px 5px;
   padding: 20px;
+  transition: all ease 0.3s;
 }
 
-.aplicaciones h6{
+.feature h6{
   margin-bottom: 10px;
 }
 
-.aplicaciones p{
+.feature p{
   line-height: 15px;
+}
+
+.feature:hover{
+  background-color: #000;
+  border: 0.5px solid #000;
+}
+
+.feature:hover .feature_text,
+.feature:hover .feature_text h6,
+.feature:hover .feature_text p {
+  color: #fff!important;
+  cursor: pointer;
 }
 
 .circulo_gris{
