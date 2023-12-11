@@ -1,5 +1,5 @@
 ---
-title: Registro de compañias
+title: 3. Registro de compañias
 description: D﻿escripción Registro de compañias
 institucion: Registro Mercantil
 icono: /images/posts/p_antico-04.png
