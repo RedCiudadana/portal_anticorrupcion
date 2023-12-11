@@ -11,4 +11,134 @@ permalink: "conjuntos/index.html"
 
 {% block content %}    
 
+            <!-- features-area-start -->
+            <div class="features-02-area pb-90 pt-50"  style="background-color: #e0e0e8">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-12 mb-20 mx-1">
+                            <a class="hipervinculos" href="/index.html">Inicio</a>&nbsp/&nbsp<a class="hipervinculos" href="#" style="pointer-events: none;">Conjuntos de Datos</a>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-lg-12 mb-20">
+                            <div class="row featurev2 mx-1">
+
+                                <div class="col-lg-4 col-sm-12 border-right">
+
+                                    <div class="sidebar_conjuntos">
+
+                                        <div class="d-flex align-items-center">
+                                            <img style="width: 50px; margin-right: 10px;" src="/assets/img/ICONOS/P_ANTICO-25.png">
+                                            <div>
+                                                <h4 class="mb-0">Organizaciones</h4>
+                                                <div class="linea25"></div>
+                                            </div>
+                                        </div>
+                                        <div class="vinculos">
+                                            <a href="#" class="vinculo">Lorem ipsum dolor sit amet &nbsp<i class="fa-solid fa-circle-arrow-right"></i></a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="sidebar_conjuntos">
+
+                                        <div class="d-flex align-items-center">
+                                            <img style="width: 50px; margin-right: 10px;" src="/assets/img/ICONOS/P_ANTICO-26.png">
+                                            <div>
+                                                <h4 class="mb-0">Grupo</h4>
+                                                <div class="linea25"></div>
+                                            </div>
+                                        </div>
+                                        <div class="vinculos">
+                                            <a href="#" class="vinculo">Lorem ipsum dolor sit amet &nbsp<i class="fa-solid fa-circle-arrow-right"></i></a><br>
+                                            <a href="#" class="vinculo">Lorem ipsum dolor sit amet &nbsp<i class="fa-solid fa-circle-arrow-right"></i></a><br>
+                                            <a href="#" class="vinculo">Lorem ipsum dolor sit amet &nbsp<i class="fa-solid fa-circle-arrow-right"></i></a><br>
+                                            <a href="#" class="vinculo">Lorem ipsum dolor sit amet &nbsp<i class="fa-solid fa-circle-arrow-right"></i></a><br>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="sidebar_conjuntos">
+
+                                        <div class="d-flex align-items-center">
+                                            <img style="width: 50px; margin-right: 10px;" src="/assets/img/ICONOS/P_ANTICO-27.png">
+                                            <div>
+                                                <h4 class="mb-0">Etiquetas</h4>
+                                                <div class="linea25"></div>
+                                            </div>
+                                        </div>
+                                        <div class="vinculos">
+                                            <a href="#" class="vinculo">Lorem ipsum dolor sit amet &nbsp<i class="fa-solid fa-circle-arrow-right"></i></a><br>
+                                            <a href="#" class="vinculo">Lorem ipsum dolor sit amet &nbsp<i class="fa-solid fa-circle-arrow-right"></i></a><br>
+                                            <a href="#" class="vinculo">Lorem ipsum dolor sit amet &nbsp<i class="fa-solid fa-circle-arrow-right"></i></a><br>
+                                            <a href="#" class="vinculo">Lorem ipsum dolor sit amet &nbsp<i class="fa-solid fa-circle-arrow-right"></i></a><br>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="sidebar_conjuntos">
+
+                                        <div class="d-flex align-items-center">
+                                            <img style="width: 50px; margin-right: 10px;" src="/assets/img/ICONOS/P_ANTICO-28.png">
+                                            <div>
+                                                <h4 class="mb-0">Formatos</h4>
+                                                <div class="linea25"></div>
+                                            </div>
+                                        </div>
+                                        <div class="vinculos">
+                                            <a href="#" class="vinculo" style="pointer-events: none;">CSV</a><br>
+                                            <a href="#" class="vinculo" style="pointer-events: none;">JSON</a><br>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="sidebar_conjuntos">
+
+                                        <div class="d-flex align-items-center">
+                                            <img style="width: 50px; margin-right: 10px;" src="/assets/img/ICONOS/P_ANTICO-29.png">
+                                            <div>
+                                                <h4 class="mb-0">Licencias</h4>
+                                                <div class="linea25"></div>
+                                            </div>
+                                        </div>
+                                        <div class="vinculos">
+                                            <a href="#" class="vinculo" style="pointer-events: none;">Lorem ipsum dolor</a><br>
+                                        </div>
+
+                                    </div>
+                      
+                                </div>
+
+                                <div class="col-lg-8 col-sm-12">
+                                    <div id="search-container">
+                                        <input type="search" id="site-search" name="q" />
+                                        <button id="search-button"><img width="35px" src="/assets/img/ICONOS/P_ANTICO-30.png"></button>
+                                    </div>
+
+                                    <div class="my-4">
+                                        <h4>{{collections.conjuntos | length}} conjuntos de datos encontrados</h4>
+                                    </div>
+
+                                    {% for conjunto in collections.conjuntos %}
+                                    <div class="main_conjuntos">
+                                        <h4>{{conjunto.data.title}}</h4>
+                                        <p>{{conjunto.data.description | safe}}</p>
+                                        <p class="csv">CSV</p>
+                                    </div>
+                                    {% endfor %}
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                      
+                    </div>
+      
+                </div>
+            </div>
+            <!-- features-area-end -->
+
 {% endblock %}

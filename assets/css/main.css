@@ -96,65 +96,7 @@
 .flaticon-donation-3:before {
   content: "\f10a"; }
 
-@font-face {
-  font-family: title_bold;
-  src: url('/assets/fonts/red/Sora-Bold.ttf');
-}
 
-@font-face {
-  font-family: title_extrabold;
-  src: url('/assets/fonts/red/Sora-ExtraBold.ttf');
-}
-
-@font-face {
-  font-family: title_light;
-  src: url('/assets/fonts/red/Sora-Light.ttf');
-}
-
-@font-face {
-  font-family: title_medium;
-  src: url('/assets/fonts/red/Sora-Medium.ttf');
-}
-
-@font-face {
-  font-family: title_regular;
-  src: url('/assets/fonts/red/Sora-Regular.ttf');
-}
-
-@font-face {
-  font-family: title_semibold;
-  src: url('/assets/fonts/red/Sora-SemiBold.ttf');
-}
-
-@font-face {
-  font-family: title_thin;
-  src: url('/assets/fonts/red/Sora-Thin.ttf');
-}
-
-@font-face {
-  font-family: text_bold;
-  src: url('/assets/fonts/red/EuclidCircularA-Bold.ttf');
-}
-
-@font-face {
-  font-family: text_italic;
-  src: url('/assets/fonts/red/EuclidCircularA-Italic.ttf');
-}
-
-@font-face {
-  font-family: text_medium;
-  src: url('/assets/fonts/red/EuclidCircularA-Medium.ttf');
-}
-
-@font-face {
-  font-family: text_regular;
-  src: url('/assets/fonts/red/EuclidCircularA-Regular.ttf');
-}
-
-@font-face {
-  font-family: text_semibold;
-  src: url('/assets/fonts/red/EuclidCircularA-SemiBold.ttf');
-}
 
 body {
   font-family: text_medium, sans-serif;
@@ -6155,6 +6097,10 @@ button.mfp-close, button.mfp-arrow{
   .logo{
     width: 50%;
   }
+
+  .border-right{
+    border-right: 0px solid #ccc!important;
+  }
 }
 
 .linea{
@@ -6169,6 +6115,14 @@ button.mfp-close, button.mfp-arrow{
   width: 60px;
   height: 4px;
   margin: 20px 0;
+}
+
+.linea25{
+  background: linear-gradient(#77cebb, #7FB9EF);
+  width: 60px;
+  height: 3px;
+  position: absolute;
+  margin-top: 10px;
 }
 
 .linea_lg{
@@ -6772,4 +6726,80 @@ button.mfp-close, button.mfp-arrow{
   border-radius: 50%;
   background-color: #ccc;
   margin-right: 10px;
+}
+
+.featurev2{
+  background-color: #fff;
+  border: 0.5px solid #f1f1f1;
+  box-shadow: rgb(146 146 146) 5px 5px 5px;
+  padding: 20px;
+  transition: all ease 0.3s;
+  display: flex;
+}
+
+.hipervinculos{
+  text-transform: uppercase!important;
+  font-size: 13px;
+}
+
+.sidebar_conjuntos{
+  margin: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.sidebar_conjuntos:last-child{
+  border-bottom: 0px solid #ccc;
+}
+
+.vinculos{
+  margin: 40px 0;
+  display: block;
+}
+
+.vinculo{
+  color: #232830;
+  font-size: 18px;
+  margin: 10px 0!important;
+}
+
+#search-container {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#site-search {
+  flex: 1;
+  border: none;
+  padding: 8px;
+}
+
+#search-button {
+  background-color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+#search-button:hover{
+  background-color: #7FB9EF!important;
+}
+
+.main_conjuntos{
+  margin: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.main_conjuntos:last-child{
+  border-bottom: 0px solid #ccc;
+}
+
+.csv{
+  background-color: #000;
+  color: #fff;
+  border-radius: 7px;
+  padding: 0px 10px;
+  width: 50px;
 }
