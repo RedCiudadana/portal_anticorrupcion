@@ -1,5 +1,5 @@
 ---
-title: Registro de cabilderos
+title: 1. Registro de cabilderos
 description: Descripcion de registro de cabilderos
 institucion: Congreso de la Republica de Guatemala
 icono: /images/posts/p_antico-04.png
