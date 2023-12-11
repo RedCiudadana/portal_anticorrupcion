@@ -33,12 +33,17 @@ permalink: "conjuntos/index.html"
                                         <div class="d-flex align-items-center">
                                             <img style="width: 50px; margin-right: 10px;" src="/assets/img/ICONOS/P_ANTICO-25.png">
                                             <div>
-                                                <h4 class="mb-0">Organizaciones</h4>
+                                                <h4 class="mb-0">Instituciones</h4>
                                                 <div class="linea25"></div>
                                             </div>
                                         </div>
                                         <div class="vinculos">
-                                            <a href="#" class="vinculo">Lorem ipsum dolor sit amet &nbsp<i class="fa-solid fa-circle-arrow-right"></i></a>
+                                            <a href="#" class="vinculo">Contraloría General de Cuentas &nbsp<i class="fa-solid fa-circle-arrow-right"></i></a><br>  
+                                            <a href="#" class="vinculo">Congreso de la Republica de Guatemala &nbsp<i class="fa-solid fa-circle-arrow-right"></i></a><br>
+                                            <a href="#" class="vinculo">Registro Mercantil &nbsp<i class="fa-solid fa-circle-arrow-right"></i></a><br>
+                                            <a href="#" class="vinculo">Repeju - Ministerio de Gobernación &nbsp<i class="fa-solid fa-circle-arrow-right"></i></a><br>
+                                            <a href="#" class="vinculo">MINFIN &nbsp<i class="fa-solid fa-circle-arrow-right"></i></a><br>
+
                                         </div>
 
                                     </div>
@@ -123,11 +128,12 @@ permalink: "conjuntos/index.html"
                                     </div>
 
                                     {% for conjunto in collections.conjuntos %}
-                                    <div class="main_conjuntos">
+                                    <a target="_blank" href="{{conjunto.data.enlace}}"><div class="main_conjuntos">
                                         <h4>{{conjunto.data.title}}</h4>
-                                        <p>{{conjunto.data.description | safe}}</p>
+                                        <p class="mb-1">{{conjunto.data.description | safe}}</p>
+                                        <p>Institución: {{conjunto.data.institucion | safe}}</p>
                                         <p class="csv">CSV</p>
-                                    </div>
+                                    </div></a>
                                     {% endfor %}
                                     
                                 </div>
