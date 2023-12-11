@@ -2,7 +2,7 @@
 title: 2. Declaración de intereses
 description: Descripción de Declaración de intereses
 institucion: Contraloría General de Cuentas
-icono: /images/posts/p_antico-04.png
+icono: /images/posts/p_antico-05.png
 estado: Publicado
 justificacion: Justificación
 enlace: http://pagua.redciudadana.org/
