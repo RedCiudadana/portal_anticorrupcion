@@ -23,7 +23,7 @@ collections:
           name: "estado",
           label: "Estado",
           widget: "select",
-          options: ["Pendiente ", "Publicado"],
+          options: ["Pendiente ", "Parcial", "Publicado"],
         }
       - { name: "justificacion", label: "Justificación" }
       - { name: "enlace", label: "Enlace" }
