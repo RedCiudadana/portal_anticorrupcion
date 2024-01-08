@@ -127,7 +127,9 @@ permalink: "conjuntos/index.html"
                                         <h4>{{collections.conjuntos | length}} conjuntos de datos encontrados</h4>
                                     </div>
 
-                                    {% for conjunto in collections.conjuntos %}
+                                    {% set conjuntosSorted = collections.conjuntos | sortAlphabetically %}
+
+                                    {% for conjunto in conjuntosSorted %}
                                     <a target="_blank" href="{{conjunto.data.enlace}}"><div class="main_conjuntos">
                                         <h4>{{conjunto.data.title}}</h4>
                                         <p class="mb-1">{{conjunto.data.description | safe}}</p>
