@@ -6688,6 +6688,18 @@ button.mfp-close, button.mfp-arrow{
   line-height: 15px;
 }
 
+.sub_header_hover{
+  transition: all ease 0.3s;
+}
+
+.sub_header_hover:hover{
+  background-color: #7FB9EF;
+}
+
+.sub_header_hover:hover p{
+  color: #fff!important;
+}
+
 .feature{
   background-color: #fff;
   border-radius: 10px;
@@ -6696,7 +6708,7 @@ button.mfp-close, button.mfp-arrow{
   align-items: center;
   text-align: left;
   box-shadow: rgb(146 146 146) 5px 5px 5px;
-  padding: 20px;
+  padding: 10px 20px;
   transition: all ease 0.3s;
   height: 100%;
 }
@@ -6759,7 +6771,7 @@ button.mfp-close, button.mfp-arrow{
 
 .vinculo{
   color: #232830;
-  font-size: 18px;
+  font-size: 15px;
   margin: 10px 0!important;
 }
 
@@ -6810,4 +6822,9 @@ button.mfp-close, button.mfp-arrow{
   border-radius: 7px;
   padding: 0px 10px;
   width: 50px;
+  transition: all ease 0.3s;
+}
+
+.csv:hover{
+  background-color: #7FB9EF;
 }
